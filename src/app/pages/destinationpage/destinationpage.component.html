@@ -1,0 +1,25 @@
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg- 6" *ngIf="destinationData">
+            <a routerLink="../../destinations" class="btn btn-sm btn-dark mb-3">Back</a>
+
+            <img src="{{destinationData[0].destinationImg}}" width="30%" height="80%" />
+            <h1 class="mt-3">{{destinationData[0].destinationName}}</h1>
+            <p>{{destinationData[0].destinationDetails}}</p>
+        
+            
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-6">
+    <h1>Enter your details</h1>
+    <form>
+        <input type="text" class="form-control" placeholder="Enter your Full Name" />
+        <input type="text" class="form-control" placeholder="Enter your Mobile Number" />
+        <textarea class="form-control" placeholder="Enter your query"></textarea>
+        <button class="btn btn-md btn-dark mt-3">Submit</button>
+    </form>
+</div>

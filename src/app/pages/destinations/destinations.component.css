@@ -1,0 +1,26 @@
+.destinationbox
+{
+    padding: 10px 10px;
+}
+.destinationbox img
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.destinationbox h1
+{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.Readbtn{
+    color: var(--primary-color);
+    background-color: lightgrey;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}

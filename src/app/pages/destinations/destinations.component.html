@@ -1,0 +1,13 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let fd of destinationData">
+            <div class="destinationbox mt-3 mb-3">
+                <img src="{{fd.destinationImg}}">
+                <h1>{{fd.destinationName}}</h1>
+                <p>{{fd.destinationDetails}}</p>
+                <a class="Readbtn" [routerLink]="['/destinations',fd.id]">Read more</a>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="banner">
+    <div class="content">
+        <h1 class="mb-4">Explore the fifth most visted <br/> country in the world. <br/> Esplora l'Italia!</h1>
+    <a routerLink="destinations">EXPLORE NOW<i class="bi bi-arrow-right"></i></a>
+    </div>
+</div>
+<!-- step -->
+<div class="container mt-5 mb-5">
+    <h1 class="text-center">Fun facts about Italy</h1>
+    <div class="row mt-5">
+        <!-- one -->
+        
+            <div class="col-lg-4 mt-2">
+                <div class="stepBox">
+                    <h1>1</h1>
+                <p>Italy's last king ruled for just 36 days</p>
+                 </div>
+            </div>
+            <!-- two -->
+            <div class="col-lg-4 mt-2">
+                <div class="stepBox">
+                    <h1>2</h1>
+                <p>Vatican city is world's smallest country</p>
+            </div>
+             <!-- three -->   
+            </div>
+            <div class="col-lg-4 mt-2">
+                <div class="stepBox">
+                    <h1>3</h1>
+                <p>Italy has the oldest population in Europe</p>
+            </div>
+                
+            </div>
+        
+        
+    </div>
+</div>
+
+<!-- destinationbox -->
+<div class="container mt-4 mb-4">
+    <h1 class="text-center">Famous <span class="highlight"></span>Destinations</h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor="let fd of destinationData;index as i">
+            <div class="destinationbox" *ngIf="i<=3" >
+                <img src="{{fd.destinationImg}}" />
+                <h1>{{fd.destinationName}}</h1>
+            </div>
+        </div>
+    </div>
+    <a routerLink="destinations" class="viewmorebtn">view more</a>
+</div>

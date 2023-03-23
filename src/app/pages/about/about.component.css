@@ -1,0 +1,29 @@
+.parallax {
+    /* The image used */
+   background-image: url("../../../assets/images/about.jpg") ;
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .glow {
+    font-size: 80px;
+    color: #000;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f3a343, 0 0 40px #f3a343, 0 0 50px #f3a343 0 0 60px #f3a343, 0 0 70px #f3a343;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #f3a343, 0 0 40px #f3a343, 0 0 50px #f3a343, 0 0 60px #f3a343, 0 0 70px #f3a343, 0 0 80px #f3a343;
+    }
+  }
